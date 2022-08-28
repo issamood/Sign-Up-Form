@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    background-color: #f9fafc;
+    margin: 0;
+}
+
+@font-face {
+    font-family: odinFont;
+    src: url(font/Norse-Bold.otf);
+}
+
+.sidebar{
+    display: flex;
+    height: 1000px;
+    width: 500px;
+    justify-content: flex-start;
+}
+
+.sidebarImage{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    display: inline-flex;
+    transform: scaleX(-1);
+}
+
+.logoBar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: inherit;
+    height: 150px;
+
+    position: absolute;
+    top: 200px;
+
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+.logoImage{
+    width: auto;
+    height: 125px;
+    opacity: 100%;
+
+
+}
+
+.logoText{
+    font-family: odinFont;
+    color: white;
+    font-size: 6rem;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formQuote{
+    width: 700px;
+    margin-top: 125px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+
+    font-size: 1.3rem;
+    font-weight: 500;
+}

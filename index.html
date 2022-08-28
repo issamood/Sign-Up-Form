@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,66 @@
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="sidebar">
+        <img src="pictures/waves.jpg" alt="Beach waves" class="sidebarImage">
+        <div class="logoBar">
+            <img src="pictures/odin-lined.png" alt="Odin Project Logo" class="logoImage">
+            <div class="logoText">ODIN</div>
+        </div>
+    </div>
+
+    <div class="formContainer">
+        <div class="formQuote">
+            This is not a real online service! You need know you need
+            something like this in your life to help you realize your deepest dreams. <br />
+            Sign up <em>now</em> to get started. <br />
+            <br />
+            You <em>know</em> you want to.
+        </div>
+        <form action="" method="post">
+            <section>
+                <h2 class="formHeader">Let's do this!</h2>
+                <div>
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="123-123-1234" required>
+                </div>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+                </div>
+            </section>
+            <section>
+                <button type="submit">Create Account</button>
+            </section>
+        </form>
+        <div>
+            Already have an account? <div class="login">Log In</div>
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
