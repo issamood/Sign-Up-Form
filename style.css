@@ -9,14 +9,14 @@ body {
     src: url(font/Norse-Bold.otf);
 }
 
-.sidebar{
+.sidebar {
     display: flex;
     height: 1000px;
     width: 500px;
     justify-content: flex-start;
 }
 
-.sidebarImage{
+.sidebarImage {
     width: inherit;
     height: inherit;
     object-fit: cover;
@@ -24,7 +24,7 @@ body {
     transform: scaleX(-1);
 }
 
-.logoBar{
+.logoBar {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -39,7 +39,7 @@ body {
     background-color: rgba(0, 0, 0, 0.7)
 }
 
-.logoImage{
+.logoImage {
     width: auto;
     height: 125px;
     opacity: 100%;
@@ -47,20 +47,20 @@ body {
 
 }
 
-.logoText{
+.logoText {
     font-family: odinFont;
     color: white;
     font-size: 6rem;
 }
 
-.formContainer{
+.formContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
-.formQuote{
+.formQuote {
     width: 700px;
     margin-top: 125px;
     margin-left: 50px;
@@ -68,4 +68,112 @@ body {
 
     font-size: 1.3rem;
     font-weight: 500;
+}
+
+/* Form Styling*/
+
+.inputForm {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(66, 66, 66);
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 50px;
+    box-shadow: 2px 2px 5px rgb(212, 212, 212);
+}
+
+#wrong_pass_alert{
+    padding-bottom: 25px;
+}
+
+.formHeader {
+    width: 100%;
+}
+
+input {
+    width: 200px;
+    padding: 5px;
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 5px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 500px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.rightInput {
+    margin-left: 50px;
+}
+
+.buttonContainer {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+button {
+    appearance: none;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 2px 2px 5px #a8a8aa;
+    background-color: #60b4c4;
+    color: white;
+    width: 180px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/*Login Line*/
+.loginQuote{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+a {
+    color: #60b4c4;
+    text-decoration: none;
 }

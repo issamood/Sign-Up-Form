@@ -30,41 +30,44 @@
             <br />
             You <em>know</em> you want to.
         </div>
-        <form action="" method="post">
-            <section>
+        <form action="" method="post" class="actualForm">
+            <section class="inputForm">
                 <h2 class="formHeader">Let's do this!</h2>
-                <div>
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" id="firstName" name="firstName" required>
-                </div>
-                <div>
-                    <label for="lastName">LAST NAME</label>
-                    <input type="text" id="lastName" name="lastName" required>
-                </div>
-                <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div>
-                    <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        placeholder="123-123-1234" required>
-                </div>
-                <div>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div>
-                    <label for="passwordConfirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+                <div class="inputBox">
+                    <div class="inputContainer">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="inputContainer rightInput">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="inputContainer rightInput">
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="123-123-1234" required>
+                    </div>
+                    <div class="inputContainer">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="inputContainer rightInput noMargin">
+                        <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="passwordConfirm" name="passwordConfirm" onkeyup="validate_password()" required>
+                    </div>
+                    <span id="wrong_pass_alert"></span>
                 </div>
             </section>
-            <section>
-                <button type="submit">Create Account</button>
+            <section class="buttonContainer">
+                <button type="submit" id="create" class="button" onclick="wrong_pass_alert()"><span>Create Account</span></button>
             </section>
         </form>
-        <div>
-            Already have an account? <div class="login">Log In</div>
+        <div class="loginQuote">
+            Already have an account? <a href="https://www.google.com/">Log In</a>
         </div>
     </div>
     </div>
