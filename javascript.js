@@ -20,7 +20,6 @@ function validate_password() {
 function wrong_pass_alert() {
     if (document.getElementById('password').value != "" &&
         document.getElementById('passwordConfirm').value != "") {
-        alert("Your response is submitted");
     } else {
         alert("Please fill all the fields");
     }
